@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alexander Peterson | Engineering Data Scientist</title>
+  <title>Alexander Peterson | 工程数据科学家</title>
   <style>
     * {
       margin: 0;
@@ -46,6 +46,19 @@
       text-decoration: none;
     }
     .contact-links a:hover {
+      text-decoration: underline;
+    }
+    .lang-switch {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+    }
+    .lang-switch a {
+      color: #58a6ff;
+      text-decoration: none;
+      font-size: 0.9rem;
+    }
+    .lang-switch a:hover {
       text-decoration: underline;
     }
     section {
@@ -167,7 +180,7 @@
 <body>
   <header>
     <h1>Alexander Peterson</h1>
-    <p class="title">Engineering Data Scientist · <a href="/cn/">中文</a></p>
+    <p class="title">工程数据科学家 · <a href="/">English</a></p>
     <div class="contact-links">
       <a href="mailto:petersonalex50@gmail.com">petersonalex50@gmail.com</a>
       <a href="https://linkedin.com/in/petersa3" target="_blank">LinkedIn</a>
@@ -176,139 +189,134 @@
   </header>
 
   <section>
-    <h2>About</h2>
+    <h2>关于我</h2>
     <p>
-      Engineering Data Scientist at Boeing with expertise in machine learning, statistical analysis, and big data. 
-      I specialize in developing predictive models, time series forecasting, and communicating complex quantitative 
-      insights to stakeholders. Previously contributed to consumer analytics and financial health assessments at 
-      MiBosillo, working with billion-record datasets in PySpark.
+      波音公司工程数据科学家，专注于机器学习、统计分析和大数据领域。擅长构建预测模型、时间序列预测，以及向利益相关者传达复杂的量化洞察。曾在 MiBosillo 从事消费者分析和财务健康评估工作，使用 PySpark 处理十亿级数据集。
     </p>
   </section>
 
   <section>
-    <h2>Boeing | Engineering Data Scientist (2022 – Present)</h2>
+    <h2>波音公司 | 工程数据科学家（2022年至今）</h2>
     <p>
-      I develop machine learning and generative AI solutions for engineering and business problems in aviation 
-      logistics, compliance, and safety. My work combines NLP, classification models, and RAG systems to improve 
-      operational efficiency and customer engagement.
+      我为航空物流、合规和安全领域的工程与业务问题开发机器学习和生成式 AI 解决方案。我的工作结合自然语言处理、分类模型和 RAG 系统，以提高运营效率和客户参与度。
     </p>
 
     <div class="project">
-      <h3>Dangerous Goods Classification System</h3>
+      <h3>危险品分类系统</h3>
       <ul>
-        <li>Built NLP classifier to predict whether goods in transit are dangerous, encoding part description data for probabilistic risk assessment</li>
-        <li>Implemented LLM solutions to summarize compliance documentation, reducing manual review burden for data stewards</li>
+        <li>构建 NLP 分类器，对部件描述数据进行编码，预测在途货物是否属于危险品，提供概率风险评估</li>
+        <li>实施 LLM 解决方案，汇总合规文档，减轻数据管理员的人工审核负担</li>
       </ul>
-      <p class="presented"><strong>Presented at:</strong> Boeing Technical Excellence Conference (BTEC) 2024, Advanced Visualization and Data Analytics Symposium (AVDATS) 2024</p>
+      <p class="presented"><strong>演讲于：</strong>波音技术卓越大会 (BTEC) 2024、高级可视化与数据分析研讨会 (AVDATS) 2024</p>
     </div>
 
     <div class="project">
-      <h3>Parts Planning Hub AI Assistant</h3>
+      <h3>部件规划中心 AI 助手</h3>
       <ul>
-        <li>Developed retrieval-augmented generation (RAG) chatbot for airline customer support and onboarding</li>
-        <li>Enabled instant access to platform documentation, driving increased customer engagement and service data collection</li>
-        <li>Refactored data pipeline to rely on production sources, improving reliability and maintainability</li>
+        <li>开发检索增强生成 (RAG) 聊天机器人，为航空公司客户提供支持和新用户引导</li>
+        <li>实现平台文档的即时访问，提升客户参与度和服务数据收集</li>
+        <li>重构数据管道，使其依赖生产数据源，提高可靠性和可维护性</li>
       </ul>
-      <p class="presented"><strong>Presented at:</strong> EDGE Conference 2026</p>
+      <p class="presented"><strong>演讲于：</strong>EDGE 大会 2026</p>
     </div>
 
     <div class="project">
-      <h3>Parts Data Optimization</h3>
+      <h3>部件数据优化</h3>
       <ul>
-        <li>Created Teradata production view that generated data for 3+ million parts in seconds—a process that previously took minutes per part in Microsoft Access</li>
-        <li>Eliminated bottleneck in parts data access, enabling real-time analytics</li>
+        <li>创建 Teradata 生产视图，可在数秒内生成 300 多万部件的数据——此前在 Microsoft Access 中生成单个部件数据需要数分钟</li>
+        <li>消除部件数据访问瓶颈，实现实时分析</li>
       </ul>
     </div>
 
-    <h3>Current Work</h3>
+    <h3>当前工作</h3>
     <ul>
-      <li>Building web application to analyze laboratory test data for engineering teams</li>
-      <li>Collaborating with Safety Analytics to analyze fleet-wide telemetric data, understanding flight patterns to inform safer procedures and design choices</li>
+      <li>构建 Web 应用程序，为工程团队分析实验室测试数据</li>
+      <li>与安全分析部门合作，分析机队遥测数据，了解飞机飞行模式，为更安全的程序和设计决策提供依据</li>
     </ul>
 
-    <h3>Presentations</h3>
+    <h3>演讲</h3>
     <table>
       <thead>
         <tr>
-          <th>Conference</th>
-          <th>Year</th>
-          <th>Title</th>
+          <th>会议</th>
+          <th>年份</th>
+          <th>主题</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>EDGE</td>
           <td>2026</td>
-          <td>Retrieval Augmented Generation for Customer Support and Onboarding within Parts Planning Hub</td>
+          <td>部件规划中心客户支持与新用户引导的检索增强生成</td>
         </tr>
         <tr>
           <td>BTEC</td>
           <td>2024</td>
-          <td>Predicting Dangerous Goods in Transit (DGIT) and Increasing Efficiency of DGIT Manual Reviews with Generative AI</td>
+          <td>预测在途危险品 (DGIT) 并利用生成式 AI 提高 DGIT 人工审核效率</td>
         </tr>
         <tr>
           <td>AVDATS</td>
           <td>2024</td>
-          <td>Predicting Dangerous Goods in Transit (DGIT) and Increasing Efficiency of DGIT Manual Reviews with Generative AI</td>
+          <td>预测在途危险品 (DGIT) 并利用生成式 AI 提高 DGIT 人工审核效率</td>
         </tr>
       </tbody>
     </table>
   </section>
 
   <section>
-    <h2>GitHub Projects</h2>
+    <h2>GitHub 项目</h2>
     <div class="projects-grid">
       <div class="project-card">
-        <h4><a href="https://github.com/petersa3/drug-prices" target="_blank">Drug Price Forecasting</a></h4>
-        <p>Time series analysis of US pharmaceutical market using NADAC database</p>
+        <h4><a href="https://github.com/petersa3/drug-prices" target="_blank">药品价格预测</a></h4>
+        <p>使用 NADAC 数据库进行美国医药市场时间序列分析</p>
       </div>
       <div class="project-card">
-        <h4><a href="https://github.com/petersa3/icelandic-sagas" target="_blank">Icelandic Saga NLP</a></h4>
-        <p>Topic extraction from historical texts</p>
+        <h4><a href="https://github.com/petersa3/icelandic-sagas" target="_blank">冰岛萨迦 NLP</a></h4>
+        <p>历史文献主题提取</p>
       </div>
       <div class="project-card">
-        <h4><a href="https://github.com/petersa3/google-play-rating-classifier" target="_blank">Google Play Rating Classifier</a></h4>
-        <p>Ensemble modeling for app rating prediction</p>
+        <h4><a href="https://github.com/petersa3/google-play-rating-classifier" target="_blank">Google Play 评分分类器</a></h4>
+        <p>应用评分预测集成建模</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Skills</h2>
+    <h2>技能</h2>
     <div class="skills-grid">
       <div class="skill-category">
-        <h4>ML/AI</h4>
-        <p>Random Forests, ARIMA, Clustering, Feature Engineering, RAG Systems</p>
+        <h4>机器学习/AI</h4>
+        <p>随机森林、ARIMA、聚类、特征工程、RAG 系统</p>
       </div>
       <div class="skill-category">
-        <h4>Big Data</h4>
-        <p>PySpark, Apache Spark, Teradata</p>
+        <h4>大数据</h4>
+        <p>PySpark、Apache Spark、Teradata</p>
       </div>
       <div class="skill-category">
-        <h4>Languages</h4>
-        <p>Python, SQL</p>
+        <h4>编程语言</h4>
+        <p>Python、SQL</p>
       </div>
       <div class="skill-category">
-        <h4>Tools</h4>
-        <p>Kibana, Splunk, JIRA, Salesforce</p>
+        <h4>工具</h4>
+        <p>Kibana、Splunk、JIRA、Salesforce</p>
       </div>
       <div class="skill-category">
-        <h4>Domain</h4>
-        <p>Time Series Analysis, NLP, Statistical Testing, A/B Testing</p>
+        <h4>领域</h4>
+        <p>时间序列分析、自然语言处理、统计检验、A/B 测试</p>
       </div>
     </div>
   </section>
 
   <section>
-    <h2>Education</h2>
+    <h2>教育背景</h2>
     <ul>
-      <li><strong>B.Sc. Physics</strong> — Oregon State University (2016)</li>
-      <li><strong>Data Science Program</strong> — Thinkful (2020)</li>
+      <li><strong>物理学学士</strong> — 俄勒冈州立大学（2016年）</li>
+      <li><strong>数据科学项目</strong> — Thinkful（2020年）</li>
     </ul>
   </section>
 
   <footer>
-    <p>Lynnwood, Washington</p>
+    <p>华盛顿州林伍德市</p>
   </footer>
 </body>
 </html>
