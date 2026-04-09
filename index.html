@@ -13,25 +13,26 @@
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
       line-height: 1.6;
-      color: #333;
+      color: #e6e6e6;
       max-width: 900px;
       margin: 0 auto;
       padding: 2rem;
+      background-color: #0d1117;
     }
     header {
       text-align: center;
       margin-bottom: 3rem;
       padding-bottom: 2rem;
-      border-bottom: 1px solid #eee;
+      border-bottom: 1px solid #30363d;
     }
     h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
-      color: #1a1a1a;
+      color: #f0f6fc;
     }
     .title {
       font-size: 1.25rem;
-      color: #666;
+      color: #8b949e;
       margin-bottom: 1rem;
     }
     .contact-links {
@@ -41,7 +42,7 @@
       flex-wrap: wrap;
     }
     .contact-links a {
-      color: #0366d6;
+      color: #58a6ff;
       text-decoration: none;
     }
     .contact-links a:hover {
@@ -53,13 +54,13 @@
     h2 {
       font-size: 1.5rem;
       margin-bottom: 1rem;
-      color: #1a1a1a;
-      border-bottom: 2px solid #0366d6;
+      color: #f0f6fc;
+      border-bottom: 2px solid #58a6ff;
       padding-bottom: 0.5rem;
     }
     h3 {
       font-size: 1.1rem;
-      color: #333;
+      color: #e6e6e6;
       margin-top: 1.5rem;
       margin-bottom: 0.5rem;
     }
@@ -74,17 +75,18 @@
       margin-bottom: 0.5rem;
     }
     .project {
-      background: #f8f9fa;
+      background: #161b22;
       padding: 1.25rem;
       border-radius: 8px;
       margin-bottom: 1.5rem;
+      border: 1px solid #30363d;
     }
     .project h3 {
       margin-top: 0;
     }
     .presented {
       font-size: 0.9rem;
-      color: #666;
+      color: #8b949e;
       margin-top: 0.5rem;
     }
     table {
@@ -95,11 +97,15 @@
     th, td {
       text-align: left;
       padding: 0.75rem;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 1px solid #30363d;
     }
     th {
-      background: #f8f9fa;
+      background: #161b22;
       font-weight: 600;
+      color: #f0f6fc;
+    }
+    td {
+      color: #e6e6e6;
     }
     .skills-grid {
       display: grid;
@@ -107,14 +113,19 @@
       gap: 1rem;
     }
     .skill-category {
-      background: #f8f9fa;
+      background: #161b22;
       padding: 1rem;
       border-radius: 8px;
+      border: 1px solid #30363d;
     }
     .skill-category h4 {
       font-size: 0.9rem;
-      color: #0366d6;
+      color: #58a6ff;
       margin-bottom: 0.5rem;
+    }
+    .skill-category p {
+      color: #8b949e;
+      margin-bottom: 0;
     }
     .projects-grid {
       display: grid;
@@ -123,20 +134,21 @@
       margin-top: 1rem;
     }
     .project-card {
-      background: #f8f9fa;
+      background: #161b22;
       padding: 1rem;
       border-radius: 8px;
+      border: 1px solid #30363d;
     }
     .project-card h4 {
       margin-bottom: 0.5rem;
     }
     .project-card p {
       font-size: 0.9rem;
-      color: #666;
+      color: #8b949e;
       margin-bottom: 0;
     }
     .project-card a {
-      color: #0366d6;
+      color: #58a6ff;
       text-decoration: none;
     }
     .project-card a:hover {
@@ -146,8 +158,8 @@
       text-align: center;
       margin-top: 3rem;
       padding-top: 2rem;
-      border-top: 1px solid #eee;
-      color: #666;
+      border-top: 1px solid #30363d;
+      color: #8b949e;
       font-size: 0.9rem;
     }
   </style>
@@ -167,8 +179,8 @@
     <h2>About</h2>
     <p>
       Engineering Data Scientist at Boeing with expertise in machine learning, statistical analysis, and big data. 
-
-      I specialize in developing predictive models, time series forecasting, and communicating complex quantitative insights to stakeholders. Previously contributed to consumer analytics and financial health assessments at 
+      I specialize in developing predictive models, time series forecasting, and communicating complex quantitative 
+      insights to stakeholders. Previously contributed to consumer analytics and financial health assessments at 
       MiBosillo, working with billion-record datasets in PySpark.
     </p>
   </section>
@@ -247,3 +259,56 @@
     <h2>GitHub Projects</h2>
     <div class="projects-grid">
       <div class="project-card">
+        <h4><a href="https://github.com/petersa3/drug-prices" target="_blank">Drug Price Forecasting</a></h4>
+        <p>Time series analysis of US pharmaceutical market using NADAC database</p>
+      </div>
+      <div class="project-card">
+        <h4><a href="https://github.com/petersa3/icelandic-sagas" target="_blank">Icelandic Saga NLP</a></h4>
+        <p>Topic extraction from historical texts</p>
+      </div>
+      <div class="project-card">
+        <h4><a href="https://github.com/petersa3/google-play-rating-classifier" target="_blank">Google Play Rating Classifier</a></h4>
+        <p>Ensemble modeling for app rating prediction</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-category">
+        <h4>ML/AI</h4>
+        <p>Random Forests, ARIMA, Clustering, Feature Engineering, RAG Systems</p>
+      </div>
+      <div class="skill-category">
+        <h4>Big Data</h4>
+        <p>PySpark, Apache Spark, Teradata</p>
+      </div>
+      <div class="skill-category">
+        <h4>Languages</h4>
+        <p>Python, SQL</p>
+      </div>
+      <div class="skill-category">
+        <h4>Tools</h4>
+        <p>Kibana, Splunk, JIRA, Salesforce</p>
+      </div>
+      <div class="skill-category">
+        <h4>Domain</h4>
+        <p>Time Series Analysis, NLP, Statistical Testing, A/B Testing</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Sc. Physics</strong> — Oregon State University (2016)</li>
+      <li><strong>Data Science Program</strong> — Thinkful (2020)</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Lynnwood, Washington</p>
+  </footer>
+</body>
+</html>
